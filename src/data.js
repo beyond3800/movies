@@ -1,0 +1,32 @@
+export const file = [
+    {
+        id:1,
+        img:"image1",
+        name:"name1",
+    },
+    {
+        id:2,
+        img:'image1',
+        name:'name1',
+    },
+     {
+        id:3,
+        img:'image1',
+        name:'name1',
+    },
+    {
+        id:4,
+        img:"image1",
+        name:"name1",
+    },
+    {
+        id:5,
+        img:'image1',
+        name:'name1',
+    },
+    {
+        id:6,
+        img:'image1',
+        name:'name1',
+    },
+]

@@ -1,0 +1,115 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+.strollbar::-webkit-scrollbar{
+    background-color: transparent;
+    height: 6px;
+}
+.strollbar::-webkit-scrollbar-thumb{
+    background-color: blue;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.blueDark{
+    background-color: rgba(3, 37, 65, 1);
+}
+.background{
+    background:'./public/image/007.jpg';
+}
+.trans{
+    transition: all 0.3s linear;
+}
+.smooth{
+    transition: linear;
+}
+.link{
+    transition: all 0.3s linear;
+    line-height: 30px;
+}
+.sub{
+    top: -30rem;
+}
+.showNav{
+    transform: translateY(-30rem);
+    /* height:0 ; */
+}
+.view{
+    /* height: auto; */
+}
+.welcome{
+    background-image: url('/public/img/free-photo-of-a-sunset-over-a-river-and-mountains.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: #f0f0f0;
+}
+.oscar{
+    /* background: linear-gradient(rgb(52, 52, 224),white); */
+    /* background: radial-gradient(rgb(208,210,230,0.1)); */
+    background:linear-gradient(to right,rgb(109, 109, 194),rgb(178, 178, 207)) ;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+    /* backdrop-filter: blur(0.5px); */
+}
+.select{
+    @apply bg-slate-700 rounded-full text-green-200 py-1
+}
+.select{
+    background: linear-gradient(green,rgb(91, 145, 91));
+}
+.hide{
+    @apply hidden h-0
+}
+.org{
+    color: rgb(212,237,49);
+}
+.fbg{
+    /* 30 213 169 */
+    border: 1px solid rgba(30, 213, 169, 100%);
+    color: rgba(3, 37, 65, 1);
+    background: linear-gradient(to right, rgb(172, 202, 172),rgba(30, 213, 169, 100%));
+    backface-visibility: 10px;
+}
+.l-space{
+    letter-spacing: -1px;
+    word-spacing: -2px;
+}
+.unscroll{
+    height: 100vh;
+    overflow: hidden;
+    background-color: #555;
+    opacity: 50%;
+}
+/* .modal-active{
+   @apply opacity-20 h-full 
+} */
+.fade-scroll::after{
+    content: "";
+    width: 40px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), #fff);
+    transition: linear .3s;
+    opacity: 1;
+}
+.footer::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 10px;
+    background: linear-gradient(to left,rgba(117, 114, 115, 0.3), #888);
+    opacity: 1;
+}
+.fixedNav{
+   @apply fixed w-full shadow-xl z-10 pt-8 -top-5
+}
+.dropDown{
+    @apply pl-4 md:pr-10 md:py-3 text-base md:absolute md:bg-white md:text-black top-10 rounded-lg
+}
